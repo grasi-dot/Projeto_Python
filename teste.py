@@ -8,14 +8,20 @@ inverso = (semEspaco[::-1])
 print(conteudo)
 validador = "Falso"
 if semEspaco == inverso:
-      validador = "Verdadeiro"
+        validador = "VERDADEIRO"
+  else:
+      alfabeto = defaultdict(int)
+      impar = []
+      for letra in S.lower():
+        if 'a' <= letra <= 'z':
+          alfabeto[letra] += 1
+      for i in alfabeto:
+        if alfabeto[i] % 2 != 0:
+          impar.append(alfabeto[i])
+      if len(impar) > 1:
+        validador = "FALSO"
+      else:
+        validador = "VERDADEIRO"
+  print("\n" + validador)
 else:
-    imp = 0
-    for i in semEspaco:
-        if semEspaco.count(i) % 2 != 0:
-            imp = imp + 1
-        if imp > 1:
-            validador = "Falso"
-            break
-        validador = "Verdadeiro"
-print(validador)
+  print("Entrada de dados invalida")
