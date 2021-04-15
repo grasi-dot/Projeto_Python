@@ -1,3 +1,4 @@
+from collections import defaultdict
 S = input('Digite uma frase: ').strip().upper()
 semEspaco = (S.replace(" ", ""))
 inverso = (semEspaco[::-1])
