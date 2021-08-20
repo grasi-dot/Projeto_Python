@@ -30,6 +30,6 @@ if (tamanhoS >= 2) and (tamanhoS <= 10**5):
   print("\n" + validador)
   with open(saidaArq, "r") as arquivo:
       conteudo2 = arquivo.read()
-  print("\n""A resposta correta é", conteudo2)
+  print("\n""A resposta certa é", conteudo2)
 else:
   print("Entrada de dados invalida")
